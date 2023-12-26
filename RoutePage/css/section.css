@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand-white: #ececec;
+  --brand-blue: #18315b;
+  --bland-darkblue: #091b39;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: -8px;
+}
+
+nav a:hover {
+  color: #0cb7bb !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--brand-black);
+  overflow-x: hidden;
+}
+
+/* COR DO BODY - BLUE */
+.container {
+  background-color: var(--brand-blue);
+  --bs-gutter-x: 0rem !important;
+}
+.navbar {
+  --bs-navbar-padding-x: none !important;
+  --bs-gutter-x: 0rem !important;
+}
+
+/* COR E FONTE DO TEXTO DA NAVBAR INICIAL */
+.navbg2 {
+  background-color: var(--bland-darkblue) !important;
+}
+
+/* COR DA BARRA - | - DO INÍCIO E DO BOSY */
+
+.barraNav{
+  color: var(--bland-yelow);
+  padding-right: 10px;
+}
+
+ul {
+  padding-left: 0rem !important;
+}
+ul .grid {
+  justify-content: center;
+}
+
+/* COR DA BARRA DE INÍCIO */
+.container .container-fluid {
+  --bs-gutter-x: 0rem !important;
+  background-color: var(--brand-white);
+}
+.container-fluid,
+.row {
+  margin-bottom: 0px;  /* Distância inferior do título "Minuto Tecnologia" em relação a nav*/
+
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(0 * var(--bs-gutter-y));
+  margin-right: calc(0 * var(--bs-gutter-x));
+  margin-left: calc(0 * var(--bs-gutter-x));
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0rem !important;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* CONTAINER DO BODY */
+.container .card {
+  align-items: center;
+  background: transparent;
+  border: none;
+  text-align: justify;
+}
+/* COR DA BARRA D0 RODAPÉ */
+footer .container {
+  --bs-gutter-x: 0rem !important;
+  background-color: var(--bland-darkblue);
+}
+
+/*--------------------------------------------------------------
+# FONTE / BORDER-BUTTON
+--------------------------------------------------------------*/
+section #home .row {
+  background-color: var(--bland-blue) !important;
+}
+
+.home-name-size {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.home-skip-button {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 35px;
+  background: #fff;
+  color: #18315b;
+  font-family: Mohave, sans-serif;
+}
+.home-skip-button:hover {
+  background-color: #0cb7bb;
+  color: var(--brand-white);
+  transition: background-color 0.5s;
+}
+
+.container-post {
+  color: #fff;
+  text-decoration: none;
+}
+.hidden {
+  display: none !important;
+}
+
+#BannerLGPD {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+
+
+#titleDestaques {
+  color: #7e7e7e;
+  font-family: Geomanist;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*------------MAIN------------*/
+.main {
+  background-color: var(--brand-blue);
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*--------------------------------------------------------------
+# OFFCANVAS - SANDUICHE -- AJUSTAR Z-INDEX E ACOR DO TEXTO 
+--------------------------------------------------------------*/
+header {
+  background-color: var(--brand-white);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2 !important;
+}
+.main-nav-container {
+  max-width: 1920px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  margin: auto;
+  padding: 20px 20px 10px 10px;
+}
+
+.main-nav-name {
+  padding: 5px 10px;
+  color: black !important;
+  text-decoration: none;
+  font-weight: 400;
+}
+.main-nav-name span {
+  color: var(--brand-green);
+}
+
+.main-nav {
+  background-color: #282828f1;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.2s ease-in-out;
+}
+
+.main-nav ul {
+  list-style: none;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/*--------------------------------------------------------------
+# ABOUT MAIN CONTAINER
+--------------------------------------------------------------*/
+.about-main-container {
+  background-color: var(--brand-white);
+  margin: auto;
+  /* padding: 30px; */
+}
+.navhotel {
+  text-align: left;
+}
+.card {
+  border: none;
+  background: transparent;
+}
+/*--------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------*/
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 100% !important;
+  }
+}
+@media screen and (min-width: 700px) {
+  header {
+    padding: 0px 10px;
+  }
+  .main-nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+  .main-nav {
+    all: unset;
+  }
+  .main-nav ul {
+    display: flex;
+    text-align: right;
+  }
+  .main-nav li {
+    padding-bottom: 0px;
+    /* padding-left: 10px; */
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 872px) {
+  .home-name-size {
+    /* margin-top: 15vh; */
+    /* font-size: 10vw; */
+    font-weight: 700;
+  }
+  .navbg2 a {
+    font-size: 2.2vw;
+  }
+  .main-nav-container{
+    display: none;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 491px) {
+  .home-skip-button {
+    color: var(--brand-white);
+    background-color: var(--brand-black);
+    padding: 20px 40px;
+    font-size: 2.8vw;
+    font-weight: 800;
+    transition: background-color 0.2s;
+  }
+  .home-name-size {
+    margin-top: 5vh;
+    font-size: 5vw;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbg2 a {
+    font-size: 1.6vh;
+  }
+}
+@media screen and (max-width: 326px) {
+  .navbg2 a {
+    font-size: 4.4vw;
+  }
+  #titleDestaques {
+    font-size: 35px;
+  }
+}
+/*--------------------------------------------------------------
+# FOOTER DA PAGE
+--------------------------------------------------------------*/
+.footer {
+  margin-top: 30px;
+  padding: 5px 0;
+  font-size: 14px;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.15); */
+}
+
+.footer .copyright {
+  padding-top: 2px;
+  text-align: right;
+  font-size: 13px;
+}
+
+.footer .credits {
+  padding-top: 6px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: var(--bland-darkblue);
+}
+
+.footer .credits a {
+  color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# BOTÃO DE VOLTAR AO INÍCIO
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: rgba(39, 167, 118, 0.8);
+  color: #fff;
+}
+
+
+
+

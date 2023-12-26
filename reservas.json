@@ -1,0 +1,34 @@
+{
+  "reservas": [
+    {
+      "nome": "Ismael Nunes Campos",
+      "email": "ismaeldenunes@gmail.com",
+      "dataEntrada": "22/11/2023",
+      "dataSaida": "24/11/2023",
+      "observacoes": "Não possue",
+      "adultos": 2,
+      "criancas": 0,
+      "id": 1
+    },
+    {
+      "nome": "Yasmin Pereira Rodrigues",
+      "email": "teste@gmail.com",
+      "dataEntrada": "01/12/2023",
+      "dataSaida": "05/12/2023",
+      "observacoes": "Quebrou  luminaria do quarto",
+      "adultos": 1,
+      "criancas": 0,
+      "id": 2
+    },
+    {
+      "nome": "Pedro Gabril",
+      "email": "teste@gmail.com",
+      "dataEntrada": "01/12/2023",
+      "dataSaida": "05/12/2023",
+      "observacoes": "",
+      "adultos": 5,
+      "criancas": 0,
+      "id": 3
+    }
+  ]
+}
