@@ -150,20 +150,19 @@
           </div>
           <div class="col">
             <div class="card h-100">
-              <form>
+              <form method="post" action="">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="exampleInputEmail1" class="form-label" >Nome</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nome">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Data de Entrada</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="text" class="form-control" id="exampleInputPassword1" name="dataEntrada">
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">Observações</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="observacoes"></textarea>
                 </div>
-              </form>
             </div>
           </div>
           <div class="col">
@@ -171,18 +170,18 @@
               <form  method="post" action="">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Data de Saída</label>
-                  <input type="text" class="form-control" id="exampleInputPassword1">
+                  <input type="text" class="form-control" id="exampleInputPassword1" name="dataSaida">
                 </div>
                 <div class="row">
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Adultos" aria-label="First name">
+                    <input type="text" class="form-control" placeholder="Adultos" aria-label="First name" name="adultos">
                   </div>
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Crianças" aria-label="Last name">
+                    <input type="text" class="form-control" placeholder="Crianças" aria-label="Last name" name="criancas">
                   </div>
                 </div>
                 <br>
@@ -204,6 +203,6 @@
       </a>
     </main>
     <script type="text/javascript" src="/RoutePage/js/main.js"></script>
-    <script src="requisicao.js"></script>
+    <script src="./RoutePage/js/requisicao.js"></script>
   </body>
 </html>
